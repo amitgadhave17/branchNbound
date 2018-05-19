@@ -1,3 +1,9 @@
+'''
+Following is solution for 8 puzzle problem using branch and bound technique.
+Author - Amit Gadhave
+Date : 19 may 2018
+
+'''
 import time
 import Queue
 
@@ -94,7 +100,6 @@ def FindRoute(final):
 #final = [list(map(int, raw_input().splt(" ")) for i in range(3)]
 initial = [[1, 2, 3], [4, 5, 6], [7, 8, 0]]
 final = [[2, 3, 6], [1, 0, 5], [4, 7, 8]]
-
 obj = Node.CreateRoot(initial)
 obj.CalculateCost(final)
 Q.put(obj)
